@@ -1,0 +1,3 @@
+What is the difference between Screen width and availWidth ?
+Screen width: The width property returns the total width of the user's screen. The width property returns width in pixels. The width property is read-only.
+Avail Width: availWidth property returns the amount of horizontal space (in pixels) available to the window.

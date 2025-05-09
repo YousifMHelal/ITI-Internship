@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      .container {
+        width: 1200px;
+        margin: 15px auto;
+      }
+
+      h2 {
+        text-transform: capitalize;
+        font-weight: 600;
+        font-size: 2rem;
+      }
+
+      button {
+        color: #fff;
+        font-size: 1.2rem;
+        border: none;
+        outline: none;
+        border-radius: 6px;
+        padding: 10px 25px;
+        background: #07a96f;
+      }
+
+      .form {
+        background: #000;
+      }
+      .form .container {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      form {
+        max-width: 800px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 10px 20px;
+        background: #fff;
+      }
+      form h2 {
+        margin: 15px 0;
+      }
+      form label {
+        font-size: 1.2rem;
+        text-transform: capitalize;
+        color: #585f62;
+        padding: 10px;
+      }
+      form input {
+        background: #eff3f6;
+        border-radius: 6px;
+        outline: none;
+        border: solid 1px #cedbde;
+        padding: 10px 5px;
+        text-transform: capitalize;
+        color: #585f62;
+        font-size: 0.7rem;
+        width: 790px;
+        margin: 5px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <h2>javaScript tutorial</h2>
+      <div style="display: inline-block; margin-top: 20px">
+        <button>< Home</button>
+        <button style="margin-left: 971px">Next ></button>
+      </div>
+      <br />
+      <h2>javaScript tutorial</h2>
+      <div style="margin-top: 20px">
+        <button style="float: left">< Home</button>
+        <button style="float: right">Next ></button>
+      </div>
+      <br />
+      <br />
+      <br />
+    </div>
+    <div class="form">
+      <div class="container">
+        <form>
+          <h2>employee health information form</h2>
+          <div>
+            <label>employee name</label>
+            <div style="display: flex; margin-bottom: 15px">
+              <input
+                type="text"
+                placeholder="first"
+                style="width: 390px; margin: 0 5px" />
+              <input
+                type="text"
+                placeholder="last"
+                style="width: 390px; margin: 0 5px" />
+            </div>
+          </div>
+          <div style="margin-bottom: 15px">
+            <label>email</label>
+            <input type="email" />
+          </div>
+          <div>
+            <label>address</label>
+            <input type="text" placeholder="street address" />
+            <input type="text" placeholder="street address line 2" />
+            <div style="display: flex; flex-wrap: wrap; margin-bottom: 15px">
+              <input
+                type="text"
+                placeholder="city"
+                style="width: 390px; margin: 5px" />
+              <input
+                type="text"
+                placeholder="region"
+                style="width: 390px; margin: 5px" />
+              <input
+                type="text"
+                placeholder="postal / zip code"
+                style="width: 390px; margin: 5px" />
+              <input
+                type="text"
+                placeholder="romania"
+                style="width: 390px; margin: 5px" />
+            </div>
+            <div style="margin-bottom: 15px">
+              <label>medical conditions</label>
+              <div style="display: flex; flex-wrap: wrap">
+                <div
+                  style="
+                    display: flex;
+                    align-items: center;
+                    padding: 5px 50px 5px 5px;
+                    border: 1px solid #cedbde;
+                    border-radius: 6px;
+                    background: #eff3f6;
+                    margin: 0 10px;
+                  ">
+                  <input id="good" type="radio" style="width: fit-content" />
+                  <label for="good" style="padding: 0">good</label>
+                </div>
+                <div
+                  style="
+                    display: flex;
+                    align-items: center;
+                    padding: 5px 50px 5px 5px;
+                    border: 1px solid #cedbde;
+                    border-radius: 6px;
+                    background: #eff3f6;
+                    margin: 0 10px;
+                  ">
+                  <input id="bad" type="radio" style="width: fit-content" />
+                  <label for="bad" style="padding: 0">bad</label>
+                </div>
+                <div
+                  style="
+                    display: flex;
+                    align-items: center;
+                    padding: 5px 50px 5px 5px;
+                    border: 1px solid #cedbde;
+                    border-radius: 6px;
+                    background: #eff3f6;
+                    margin: 0 10px;
+                  ">
+                  <input id="other" type="radio" style="width: fit-content" />
+                  <label for="other" style="padding: 0">other:</label>
+                </div>
+              </div>
+            </div>
+            <div>
+              <label>alergies</label>
+              <input type="text" />
+            </div>
+            <div>
+              <label>medications</label>
+              <input type="text" />
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script>
+      //Find random number from 30 to 90
+      const ran = Math.floor(Math.random() * (90 - 30) + 30);
+      console.log(ran);
+
+      //Write a JavaScript function to check whether an `input` is an array or not.
+      function checkArray(arr) {
+        let result = Array.isArray(arr);
+        if (result) {
+          console.log("The object is an array");
+        } else {
+          console.log("You did't enter any array");
+        }
+      }
+      checkArray([1, 2, 3]);
+      checkArray("hello");
+
+      //Write a JavaScript program to find the most frequent item in an array.
+      var mostFrequent = 0;
+      var count = 0;
+      var maxCount = 0;
+      function frequent(arr) {
+        arr.sort();
+        for (let i = 0; i < arr.length; i++) {
+          count = 0;
+          for (let j = 0; j < i; j++) {
+            if (arr[j] === arr[i]) {
+              count += 1;
+            }
+          }
+          if (count > maxCount) {
+            maxCount = count;
+            mostFrequent = arr[i];
+          }
+        }
+        console.log("The most frequent element: " + mostFrequent);
+      }
+      frequent([1, 2, 2, 3, 5, 5, 5, 5, 4, 6, 6, 6, 8, 5, 7, 9, 0]);
+
+      //Write a JavaScript program to compute the sum and product of an array of integers
+      function sumAndPro(arr) {
+        var sum = 0;
+        var pro = 1;
+        for (var i = 0; i < arr.length; i++) {
+          sum = sum + arr[i];
+          pro = pro * arr[i];
+        }
+        console.log("Sum of arr = " + sum);
+        console.log("product of arr = " + pro);
+      }
+      sumAndPro([1, 2, 2, 3]);
+
+      //Write a JavaScript function to get the nth largest element from an array.
+      var largest = 0;
+      function theLargest(arr) {
+        arr.sort();
+        for (let i = 0; i < arr.length; i++) {
+          for (let j = 0; j < arr.length; j++) {
+            if (arr[i] < arr[j]) {
+              largest = arr[j];
+            }
+          }
+        }
+        console.log("The largest element: " + largest);
+      }
+      theLargest([1, 2, 2, 3, 5, 5, 5, 5, 4, 6, 6, 6, 8, 5, 7, 0]);
+    </script>
+  </body>
+</html>

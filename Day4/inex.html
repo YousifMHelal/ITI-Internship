@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <style>
+    p {
+      font-size: 1.2rem;
+      width: 70%;
+    }
+  </style>
+</head>
+
+<body>
+  <h2>Main Heading</h2>
+  <p id="demo"></p>
+  <button onclick="handelClick()">Click me</button>
+  <br />
+  <br />
+  <h3>This is the first heading</h3>
+  <h3>This is the second heading</h3>
+  <h3>This is the third heading</h3>
+  <button onclick="changeColor()">Change color</button>
+
+  <h1>What is the differences between static and dynamic websites</h1>
+  <p>
+    <em>static website: </em>A static website is made up of web pages created
+    using HTML, CSS and Javascript (all examples of web development
+    languages). Each page on a static website is stored as a single HTML file,
+    which is delivered directly from the server to the web page exactly as is.
+    This content essentially becomes a part of the design on your page, and
+    won’t change unless the original HTML file is edited at a code level.
+  </p>
+  <p><em>dynamic website: <em>Built using server side language and technology, dynamic websites allow for the content of
+        each page to be delivered and displayed dynamically, or on-the-fly, according to user behavior or from
+        user-generated content. </p>
+  <h1>What is event capturing is?</h1>
+  <p><em>Event Capturing: </em>is one of two ways to do event propagation in the HTML DOM. In event capturing, an event
+    propagates from the outermost element to the target element. It is the opposite of event bubbling, where events
+    propagate outwards from the target to the outer elements.</p>
+
+  <script>
+    const ele = document.querySelector("h2").innerHTML;
+    document.querySelector("#demo").innerHTML =
+      "This is demo paragraph and " + ele;
+    document.write(" <br> New heading");
+    function handelClick() {
+      alert(ele);
+      console.log(ele);
+    }
+
+    function changeColor() {
+      const arr = document.querySelectorAll("h3");
+      for (let i = 0; i < arr.length; i++) {
+        arr[i].style.background = "orange";
+      }
+    }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+      }
+
+      #myCanvas {
+        border: 2px solid #279eff;
+        cursor: crosshair;
+      }
+
+      button {
+        border: none;
+        outline: none;
+        background: #279eff;
+        color: #fff;
+        padding: 10px 50px;
+        border-radius: 6px;
+        margin-top: 20px;
+        cursor: pointer;
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <canvas id="myCanvas" width="1000" height="600"></canvas>
+    <button id="btn"></button>
+    <h2></h2> -->
+
+    <svg height="200">
+      <polygon points="100,10 40,180 190,60 10,60 160,180" fill="green" />
+    </svg>
+
+    <svg height="200">
+      <ellipse cx="100" cy="50" rx="100" ry="50" fill="red" />
+    </svg>
+
+    <svg height="200">
+      <line x1="10" y1="10" x2="10" y2="190" stroke="black" />
+      <line x1="10" y1="10" x2="280" y2="10" stroke="black" />
+      <line x1="280" y1="190" x2="280" y2="10" stroke="black" />
+      <line x1="10" y1="190" x2="280" y2="190" stroke="black" />
+      <line x1="10" y1="10" x2="140" y2="90" stroke="black" />
+      <line x1="280" y1="10" x2="140" y2="90" stroke="black" />
+    </svg>
+
+    <script src="app.js"></script>
+  </body>
+</html>

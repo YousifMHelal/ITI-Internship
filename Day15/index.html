@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- -----Bootstrap link----- -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css"
+      integrity="sha512-b2QcS5SsA8tZodcDtGRELiGv5SaKSk1vDHDaQRda0htPYWZ6046lr3kJ5bAAQdpV2mmA/4v0wQF9MyU6/pDIAg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.1/bootstrap-icons.svg" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <title>Document</title>
+    <style>
+      nav ul li {
+        padding: 0 20px;
+        letter-spacing: 3px;
+      }
+
+      section {
+        height: 100vh;
+      }
+
+      .accordion-button:not(.collapsed) {
+        background-color: #f4501ea3;
+      }
+
+      .accordion-button:focus {
+        box-shadow: 0 0 0 0.25rem #f4501e91;
+      }
+
+      .form-control:focus {
+        box-shadow: 0 0 0 0.25rem #f4501e91;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- -----Navbar----- -->
+    <nav
+      class="navbar navbar-expand-lg fixed-top"
+      data-bs-theme="dark"
+      style="background-color: #f4511e">
+      <div class="container">
+        <a class="navbar-brand" style="letter-spacing: 4px" href="#home"
+          >Logo</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul
+            class="navbar-nav ms-auto mb-2 mb-lg-0"
+            style="text-transform: uppercase">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#about">about</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false">
+                services
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#testimonial">Testimonial</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#pricing">pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- -----Landding page----- -->
+    <section
+      id="home"
+      class="d-flex justify-content-center align-items-center"
+      style="background: #f4511e; color: #fff">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 text-center">
+            <h1 class="display-1 pb-2">Company</h1>
+            <p class="lead pb-5">We specialize in blablabla</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 col-md-10 pb-3">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Email Address" />
+          </div>
+          <div class="col-sm-12 col-md-2 text-center">
+            <button
+              type="button"
+              class="btn w-100"
+              style="background: #d9534f; color: #fff"
+              data-bs-toggle="button"
+              autocomplete="off">
+              Subscribe
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- -----About section----- -->
+    <article id="about">
+      <div class="container">
+        <h2 class="text-center pt-5" style="text-transform: capitalize">
+          More info about us
+        </h2>
+        <p class="lead text-center mt-3">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero fugiat
+          quo et provident voluptas ipsum similique praesentium nihil pariatur
+          numquam eligendi blanditiis consequatur repellat quos ad repudiandae,
+          cumque fugit commodi assumenda eius iure? In quia doloremque rem,
+          veritatis numquam ipsam corrupti exercitationem quo neque rerum
+          eveniet veniam hic. Voluptatum, in.
+        </p>
+      </div>
+
+      <div class="container p-5 mb-5">
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseOne"
+                aria-expanded="false"
+                aria-controls="flush-collapseOne">
+                Who we are ?
+              </button>
+            </h2>
+            <div
+              id="flush-collapseOne"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body lead">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta
+                impedit tempora perspiciatis autem. Eveniet omnis assumenda
+                consequuntur culpa eos fugiat quos aperiam sequi at corporis
+                dicta necessitatibus natus, ut doloremque!
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseTwo"
+                aria-expanded="false"
+                aria-controls="flush-collapseTwo">
+                Our services
+              </button>
+            </h2>
+            <div
+              id="flush-collapseTwo"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body lead">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Adipisci unde nisi omnis aliquid, molestias architecto
+                cupiditate rerum recusandae possimus incidunt. Unde, repellendus
+                necessitatibus. Temporibus sit suscipit reiciendis consectetur
+                commodi dolore.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseThree"
+                aria-expanded="false"
+                aria-controls="flush-collapseThree">
+                Contact with us
+              </button>
+            </h2>
+            <div
+              id="flush-collapseThree"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body lead">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
+                magnam cumque totam aut! Sit et molestias at voluptas mollitia
+                libero cupiditate. Tempore esse nulla inventore earum iste
+                consequuntur odit expedita?
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- -----Testimonial----- -->
+    <article id="testimonial" class="py-5" style="background: #f4511e">
+      <div class="container">
+        <h2
+          class="text-center pt-2"
+          style="text-transform: uppercase; color: #fff">
+          what our customers say
+        </h2>
+
+        <div
+          id="carouselExampleCaptions"
+          class="carousel slide"
+          style="margin-top: 20px; height: 200px">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <p
+                class="text-center lead"
+                style="padding-top: 65px; color: #fff">
+                "Could I...BE any more happy with this company?"<br />
+                Chandler Bing, Actor, FriendsAlot
+              </p>
+            </div>
+            <div class="carousel-item">
+              <p class="text-center" style="padding-top: 65px; color: #fff">
+                "Could I...BE any more happy with this company?"<br />
+                Chandler Bing, Actor, FriendsAlot
+              </p>
+            </div>
+            <div class="carousel-item">
+              <p
+                class="text-center lead"
+                style="padding-top: 65px; color: #fff">
+                "Could I...BE any more happy with this company?"<br />
+                Chandler Bing, Actor, FriendsAlot
+              </p>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </article>
+
+    <!-- -----Our plans----- -->
+    <article class="py-5" id="pricing">
+      <div class="container">
+        <h2 class="text-center" style="text-transform: uppercase">Pricing</h2>
+        <p class="text-center">Chose the payment plan that works for you</p>
+        <div class="row mt-5">
+          <div
+            class="col-sm-12 col-md-6 col-lg-4 d-flex justify-content-center mt-4">
+            <div class="card" style="width: 18rem; border-color: #f4511e">
+              <div class="card-body p-0">
+                <h5
+                  class="card-title text-center p-3"
+                  style="color: #fff; background: #f4511e">
+                  Basic
+                </h5>
+                <div class="py-2">
+                  <p class="m-0 text-center">20 Lorem</p>
+                  <p class="m-0 text-center">15 Ipsum</p>
+                  <p class="m-0 text-center">5 Dolor</p>
+                  <p class="m-0 text-center">2 sit</p>
+                  <p class="m-0 text-center">Endless Amet</p>
+                </div>
+              </div>
+              <span class="list-group"> </span>
+              <div class="card-body text-center">
+                <h3>19$</h3>
+                <p>Per month</p>
+
+                <button
+                  type="button"
+                  class="btn px-5"
+                  style="background: #f4511e; color: #fff"
+                  data-bs-toggle="button"
+                  autocomplete="off">
+                  Sign Up
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-sm-12 col-md-6 col-lg-4 d-flex justify-content-center mt-4">
+            <div class="card" style="width: 18rem; border-color: #f4511e">
+              <div class="card-body p-0">
+                <h5
+                  class="card-title text-center p-3"
+                  style="color: #fff; background: #f4511e">
+                  Pro
+                </h5>
+                <div class="py-2">
+                  <p class="m-0 text-center">50 Lorem</p>
+                  <p class="m-0 text-center">35 Ipsum</p>
+                  <p class="m-0 text-center">10 Dolor</p>
+                  <p class="m-0 text-center">5 sit</p>
+                  <p class="m-0 text-center">Endless Amet</p>
+                </div>
+              </div>
+              <span class="list-group"> </span>
+              <div class="card-body text-center">
+                <h3>29$</h3>
+                <p>Per month</p>
+
+                <button
+                  type="button"
+                  class="btn px-5"
+                  style="background: #f4511e; color: #fff"
+                  data-bs-toggle="button"
+                  autocomplete="off">
+                  Sign Up
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-sm-12 col-md-6 col-lg-4 d-flex justify-content-center mt-4">
+            <div class="card" style="width: 18rem; border-color: #f4511e">
+              <div class="card-body p-0">
+                <h5
+                  class="card-title text-center p-3"
+                  style="color: #fff; background: #f4511e">
+                  Premium
+                </h5>
+                <div class="py-2">
+                  <p class="m-0 text-center">100 Lorem</p>
+                  <p class="m-0 text-center">50 Ipsum</p>
+                  <p class="m-0 text-center">20 Dolor</p>
+                  <p class="m-0 text-center">10 sit</p>
+                  <p class="m-0 text-center">Endless Amet</p>
+                </div>
+              </div>
+              <span class="list-group"> </span>
+              <div class="card-body text-center">
+                <h3>39$</h3>
+                <p>Per month</p>
+
+                <button
+                  type="button"
+                  class="btn px-5"
+                  style="background: #f4511e; color: #fff"
+                  data-bs-toggle="button"
+                  autocomplete="off">
+                  Sign Up
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- -----Contact----- -->
+    <article class="py-5" id="contact">
+      <div class="container">
+        <h2 class="text-center mb-5">Contact</h2>
+        <div class="row">
+          <div class="col-sm-12 col-lg-5 mb-4">
+            <p>Contact us and we'll get back to you within 24 hours.</p>
+            <p class="d-flex align-items-center">
+              <span class="material-symbols-outlined pe-2"> location_on </span>
+              Chicago, US
+            </p>
+            <p class="d-flex align-items-center">
+              <span class="material-symbols-outlined pe-2"> smartphone </span>
+              +20100111000
+            </p>
+            <p class="d-flex align-items-center">
+              <span class="material-symbols-outlined pe-2"> mail </span>
+              mymail@Something.com
+            </p>
+          </div>
+          <div class="col-sm-12 col-lg-7">
+            <form class="row g-3">
+              <div class="col">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Name"
+                  aria-label="name" />
+              </div>
+              <div class="col">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Email"
+                  aria-label="email" />
+              </div>
+              <textarea
+                style="width: 98%"
+                class="form-control ms-2"
+                cols="3"
+                rows="5"
+                placeholder="Your feedback"></textarea>
+              <div class="col-12 text-center">
+                <button
+                  type="button"
+                  class="btn px-5"
+                  style="background: #f4511e; color: #fff"
+                  data-bs-toggle="button"
+                  autocomplete="off">
+                  Send
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- -----Footer----- -->
+    <footer>
+      <p class="text-center mt-3">&COPY; All Right Reservied</p>
+    </footer>
+
+    <i class="bi bi-0-circle"></i>
+
+    <!-- -----Bootstrap link----- -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"></script>
+  </body>
+</html>

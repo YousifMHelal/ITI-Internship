@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet" />
+    <title>Form</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+      .section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        padding: 50px;
+        border-radius: 8px;
+      }
+
+      form input {
+        padding: 10px;
+        width: 350px;
+        margin: 10px 0;
+        border: none;
+        outline: none;
+        border-radius: 5px;
+      }
+      form h3 {
+        font-size: 1.6rem;
+        text-align: center;
+        padding-bottom: 25px;
+        color: #fff;
+        font-weight: 800;
+        text-transform: capitalize;
+      }
+
+      form div {
+        display: flex;
+        justify-content: center;
+        max-width: 350px;
+        margin: 15px 0;
+      }
+      form div input {
+        width: 30px;
+        margin-right: 20px;
+      }
+
+      .form input {
+        background: transparent;
+        border: solid 1px #555;
+        border-radius: 0;
+        text-transform: capitalize;
+      }
+
+      .form button {
+        padding: 10px 60px;
+        color: #eee;
+        background: #475257;
+        border: none;
+        outline: none;
+        text-transform: capitalize;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="section" style="background: #0e0e0e">
+      <form style="background: #28313c; border-radius: 0" class="form">
+        <div class="controlers">
+          <button style="background-color: #53ad8a">sign up</button>
+          <button>log in</button>
+        </div>
+        <h3 style="font-weight: 300">sign up for free</h3>
+        <div style="margin: 0">
+          <input type="text" placeholder="First name" style="width: 165px" />
+          <input
+            type="text"
+            placeholder="Last name"
+            style="width: 165px; margin-right: 0" />
+        </div>
+        <input type="email" placeholder="Email Address" />
+        <input type="password" placeholder="Set A Password" />
+        <input
+          type="submit"
+          value="get started"
+          style="
+            background: #53ad8a;
+            font-size: 1.4rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            color: #eee;
+          " />
+      </form>
+      <script>
+        function checkPalindrome(strEntry) {
+          var str = "";
+          var count = 0;
+          if (str.length % 2 === 0) {
+            count = str.length / 2;
+          } else {
+            if (str.length === 1) {
+              console.log("Entry is a palindrome.");
+              return true;
+            } else {
+              count = (str.length - 1) / 2;
+            }
+          }
+          for (var i = 0; i < count; i++) {
+            if (str[i] != str.slice(-1 - i)[0]) {
+              console.log("Entry is not a palindrome.");
+              return false;
+            }
+          }
+          console.log("The entry is a palindrome.");
+          return true;
+        }
+        checkPalindrome("madam");
+
+        function type(arg) {
+          console.log(typeof arg);
+        }
+        type(5);
+      </script>
+    </div>
+  </body>
+</html>

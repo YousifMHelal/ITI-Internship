@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+  width: 1172px;
+  margin: auto;
+}
+
+nav .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+nav h2 {
+  color: rgb(255, 0, 212);
+  text-transform: capitalize;
+  font-style: italic;
+  cursor: pointer;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+}
+
+nav ul li {
+  padding: 0 30px;
+  list-style: none;
+  cursor: pointer;
+  text-transform: capitalize;
+  color: #9e9fa5;
+}
+
+.home {
+  margin-top: 50px;
+}
+
+.home h2 {
+  text-transform: capitalize;
+  padding: 10px 0;
+}
+
+.home .content {
+  padding: 0 25px;
+  margin-bottom: 20px;
+}
+
+.home .content h4 {
+  color: red;
+}
+
+.bouns .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 50vh;
+}
+
+.bouns .box {
+  background: #a6f6ff;
+  text-align: center;
+  border-radius: 50px 0px 50px 0px;
+  box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.58);
+  width: 500px;
+  padding: 25px;
+}
+
+.bouns .box h2,
+.bouns .box h4 {
+  padding: 10px;
+  text-transform: capitalize;
+}
+
+.bouns .box p {
+  padding: 5px;
+  text-transform: capitalize;
+}
+
+.bouns .box div {
+  display: flex;
+}
+
+.bouns .box div input {
+  width: 60px;
+  margin: 0 0 0 10px;
+  outline: 2px solid #12486b;
+  border-radius: 6px;
+  padding: 5px;
+  border: none;
+  background: transparent;
+}
+
+.bouns .box div button {
+  margin: 0 10px;
+  outline: 2px solid #12486b;
+  text-transform: capitalize;
+  border-radius: 6px;
+  padding: 0 15px;
+  cursor: pointer;
+  border: none;
+  background: transparent;
+}

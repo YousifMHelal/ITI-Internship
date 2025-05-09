@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+/* -----Main rules----- */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-col: #106eea;
+  --p-col: #6f7274;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #f6f9fe;
+}
+
+.container {
+  width: 1170px;
+  margin: auto;
+}
+
+button,
+.bttn {
+  padding: 15px 35px;
+  border: none;
+  outline: none;
+  font-size: .9rem;
+  text-transform: uppercase;
+  border-radius: 4px;
+  margin: 10px 10px 0 0;
+  font-weight: 600;
+  color: #fff;
+  background: var(--main-col);
+  cursor: pointer;
+}
+
+/* -----Nav bar----- */
+nav {
+  background: #fff;
+  height: 70px;
+}
+
+nav .logo {
+  display: inline-block;
+  padding: 10px;
+  font-size: 2rem;
+}
+
+nav .logo span {
+  color: var(--main-col);
+}
+
+nav ul {
+  width: fit-content;
+  float: right;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  padding: 25px 10px;
+  font-size: 1rem;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+nav ul .active {
+  color: var(--main-col);
+  position: relative;
+}
+
+nav ul .active::before {
+  content: "";
+  position: absolute;
+  bottom: 20px;
+  left: 5px;
+  text-align: center;
+  width: 55px;
+  height: 2px;
+  background: var(--main-col);
+  color: red;
+}
+
+
+/* -----Landing page----- */
+.landing {
+  min-height: calc(100vh - 70px);
+  background: url(bg.jpg);
+  background-size: cover;
+  box-shadow: inset 0 0 0 2000px rgba(128, 139, 157, .2);
+}
+
+main {
+  padding-top: 250px;
+}
+
+main .header {
+  font-size: 4rem;
+  font-weight: 900;
+}
+
+main .header span {
+  color: var(--main-col);
+}
+
+main p {
+  color: var(--p-col);
+  font-size: 1rem;
+  margin-bottom: 30px;
+}
+
+main .controls {
+  display: flex;
+}
+
+main .controls .btn {
+  background: transparent;
+  color: #000;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+}
+
+main .controls .btn span {
+  color: var(--main-col);
+  font-size: 2rem;
+  padding-right: 10px;
+}
+
+/* -----About article----- */
+article {
+  min-height: 100vh;
+}
+
+article .info {
+  text-align: center;
+  padding: 50px 0;
+}
+
+article .info .heading {
+  color: var(--main-col);
+  text-transform: uppercase;
+  font-size: .8rem;
+  background: #e7f1fd;
+  width: fit-content;
+  margin: auto;
+  padding: 8px 15px;
+  border-radius: 20px;
+}
+
+article .info .header {
+  font-size: 2rem;
+  font-weight: 900;
+  text-transform: capitalize;
+  padding: 10px 0 20px;
+}
+
+article .info .header span {
+  color: var(--main-col);
+}
+
+article .info p {
+  color: var(--p-col);
+}
+
+article .contant {
+  display: flex
+}
+
+article .contant img {
+  width: 40%;
+  height: 450px;
+}
+
+article .contant .details {
+  padding: 30px 50px 30px 0;
+  width: 55%;
+  margin-left: 2%;
+  margin-top: 0;
+}
+
+article .contant .details .head h3 {
+  font-size: 1.4rem;
+}
+
+article .contant .details .head p {
+  color: var(--p-col);
+  margin-bottom: 35px;
+}
+
+article .contant .details .cats .cat {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+article .contant .details .cats .cat span {
+  font-size: 1.4rem;
+  padding: 10px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.4);
+  color: var(--main-col);
+  margin-right: 10px;
+}
+
+article .contant .details .cats .cat .in h4 {
+  padding-bottom: 5px;
+}
+
+article .contant .details .cats .cat .in p {
+  color: var(--p-col);
+}
+
+article .contant .details .para {
+  color: var(--p-col);
+  margin-top: 35px;
+  font-size: .9rem;
+  line-height: 1.4rem;
+}
+
+
+/* ------Our progress----- */
+
+article .skills {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+article .skills .skill {
+  width: 45%;
+  margin: 20px 10px;
+}
+
+article .skills .skill .name {
+  display: flex;
+  justify-content: space-between;
+}
+
+article .skills .skill .name p {
+  font-weight: 800;
+  font-size: .8rem;
+  text-transform: uppercase;
+}
+
+article .skills .skill progress {
+  width: 100%;
+  height: 12px;
+  border: 0;
+  border-radius: 0;
+}
+
+progress::-webkit-progress-value {
+  background-color: var(--main-col);
+}
+
+/* -----Google map section----- */
+article .content {
+  display: flex;
+}
+
+article .map {
+  width: 50%;
+  margin-right: 5%;
+}
+
+article form {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 25px;
+}
+
+article form input,
+textarea {
+  padding: 10px 25px 10px 5px;
+  color: var(--p-col);
+  text-transform: capitalize;
+  border: 1px solid #e3e7ea;
+  margin: 15px 0;
+  outline: none;
+  background: transparent;
+}
+
+article form div input {
+  width: 48%;
+}
+
+article form div input:first-child {
+  margin-right: 17px;
+}
+
+article form .bttn{
+  width: fit-content;
+  margin: auto;
+}
+
+/* -----Footer----- */
+footer{
+  background: #f1f6fe;
+  height: 60px;
+}
+
+footer .content{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+footer .content p{
+  color: var(--p-col);
+  text-transform: capitalize;
+}
+
+footer p b{
+  color: #000;
+}
+footer p span{
+  color: var(--main-col);
+}
+

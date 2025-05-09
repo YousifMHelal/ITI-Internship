@@ -1,0 +1,17 @@
+what is the difference between Map and Object ?
+-In Object, the data-type of the key-field is restricted to integer, strings, and symbols. Whereas in Map, the key-field can be of any data-type (integer, an array, even an object!)
+
+-In the Map, the original order of elements is preserved. This is not true in case of objects.
+
+-The Map is an instance of an object but the vice-versa is not true.
+
+---------------------------------
+what is the difference between var let const in javascript?
+-var variables can be re-declared and updated
+This means that we can do this within the same scope and won't get an error.
+
+-let can be updated but not re-declared.
+Just like var,  a variable declared with let can be updated within its scope. Unlike var, a let variable cannot be re-declared within its scope. So while this will work:
+
+-const cannot be updated or re-declared
+This means that the value of a variable declared with const remains the same within its scope. It cannot be updated or re-declared. So if we declare a variable with const, we can neither do this:

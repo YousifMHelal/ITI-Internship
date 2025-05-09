@@ -1,0 +1,37 @@
+.part-one,
+.part-one a {
+  color: green;
+}
+
+.part-one ::selection {
+  color: red;
+  background: yellow;
+}
+
+.part-two span {
+  color: red;
+}
+
+.part-three article:first-child {
+  background: yellow;
+}
+
+.part-three article:last-child {
+  background: pink;
+}
+
+.part-four article:first-of-type {
+  background: yellow;
+}
+
+.part-four article:first-of-type>span {
+  color: red;
+}
+
+.part-four article:last-child {
+  background: pink;
+}
+
+.part-four article:last-child>span {
+  color: blue;
+}

@@ -1,0 +1,84 @@
+body {
+  overflow: hidden;
+  min-height: 100vh;
+}
+
+.part-1,
+.part-2,
+.part-3 {
+  display: flex;
+  justify-content: center;
+}
+
+.part-1 div,
+.part-2 div,
+.part-3 div {
+  width: 50px;
+  height: 50px;
+  background: red;
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.part-1 div:nth-child(odd) {
+  background: gray;
+}
+
+.part-2 {
+  flex-direction: row-reverse;
+}
+
+.part-2 div,
+.part-3 div {
+  background: #00bfff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.part-3 {
+  flex-wrap: wrap;
+}
+
+.part-3 div:nth-child(1) {
+  order: 4;
+  flex-grow: 1;
+}
+
+.part-3 div:nth-child(2) {
+  order: 0;
+  flex-grow: 1;
+}
+
+.part-3 div:nth-child(3) {
+  order: 3;
+  flex-grow: 1;
+}
+
+.part-3 div:nth-child(4) {
+  order: 2;
+  flex-grow: 1;
+}
+
+.part-3 div:nth-child(5) {
+  order: 1;
+  flex-grow: 2;
+  background: lightgreen;
+}
+
+.heart div {
+  text-align: center;
+  margin-top: 50px;
+  color: red;
+  font-size: 8rem;
+  animation: beat .75s infinite alternate;
+}
+
+@keyframes beat {
+  to {
+    transform: scale(1.4);
+  }
+}

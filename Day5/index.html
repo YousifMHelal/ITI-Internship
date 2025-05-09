@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background: #bfd0ca;
+      }
+
+      .container {
+        width: 900px;
+        margin: 100px auto;
+        background: #fff;
+        height: 500px;
+        border-radius: 10px;
+        padding: 20px;
+        -webkit-box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.75);
+        box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.75);
+      }
+
+      .contant {
+        margin-top: 130px;
+        display: inline-block;
+      }
+
+      .lift-side {
+        width: 50%;
+        float: left;
+      }
+
+      .right-side {
+        width: 40%;
+        float: right;
+      }
+
+      button {
+        display: block;
+        margin: 20px;
+        font-size: 1.4rem;
+        color: #fff;
+        outline: none;
+        border: none;
+        border-radius: 6px;
+        padding: 15px 80px 15px 0;
+        text-transform: capitalize;
+        cursor: pointer;
+        width: 90%;
+      }
+
+      h2 {
+        font-size: 2.8rem;
+        font-weight: 900;
+        letter-spacing: 0.6rem;
+        margin-bottom: 15px;
+        color: #786e75;
+      }
+
+      p {
+        font-size: 1.5rem;
+        width: 80%;
+        font-weight: 500;
+        color: #b9b5b3;
+      }
+
+      .line {
+        width: 1px;
+        background: #666;
+        height: 400px;
+        margin: -100px 0;
+        display: inline-block;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="contant">
+        <div class="lift-side">
+          <h2>Sign up with:</h2>
+          <p>
+            W3docs provides free learning materials for programming languages
+            like HTML, CSS, JAVA SCRIPT, PHP etc
+          </p>
+        </div>
+        <div class="line"></div>
+        <div class="right-side">
+          <button onclick="handelClick(this)" style="background: #3a589e">
+            facebook
+          </button>
+          <button onclick="handelClick(this)" style="background: #429dd6">
+            twitter
+          </button>
+          <button onclick="handelClick(this)" style="background: #d1493a">
+            google
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <br />
+
+    <div class="container">
+      <table style="margin-top: 100px;">
+        <tr>
+          <td><h2>Sign up with:</h2></td>
+          <td>
+            <button onclick="handelClick(this)" style="background: #3a589e">
+              facebook
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td rowspan="2" style="width: 50%;">
+            <p>
+              W3docs provides free learning materials for programming languages
+              like HTML, CSS, JAVA SCRIPT, PHP etc
+            </p>
+          </td>
+          <td>
+            <button onclick="handelClick(this)" style="background: #429dd6">
+              twitter
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <button onclick="handelClick(this)" style="background: #d1493a">
+              google
+            </button>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <script>
+      function handelClick(ele) {
+        alert(ele.innerHTML);
+        console.log(ele.innerHTML);
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+{
+    "products": [
+      {
+        "product_id": 1,
+        "product_name": "Iphone 14",
+        "product_desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries",
+        "product_category": "smart phone"
+      },
+      {
+        "product_id": 2,
+        "product_name": "Iphone 13 Pro Max",
+        "product_desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries",
+        "product_category": "smart phone"
+      },
+      {
+        "product_id": 3,
+        "product_name": "Appel",
+        "product_desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries",
+        "product_category": "labtop"
+      },
+      {
+        "product_id": 4,
+        "product_name": "Dell",
+        "product_desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries",
+        "product_category": "labtop"
+      }
+    ]
+}
