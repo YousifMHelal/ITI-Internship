@@ -1,4 +1,3 @@
-
 # 🧠 ITI Internship Projects
 
 ## <a name="introduction">🎉 Introduction</a>
@@ -43,37 +42,41 @@ Ensure you have the following installed:
 ## <a name="installation">🚀 How to Run</a>
 
 1. **Clone the repository:**
-    ```bash
-    git clone https://github.com/YousifMHelal/ITI-Internship.git
-    ```
+
+   ```bash
+   git clone https://github.com/YousifMHelal/ITI-Internship.git
+   ```
 
 2. **Navigate to the project folder:**
-    ```bash
-    cd ITI-Internship
-    ```
+
+   ```bash
+   cd ITI-Internship/folderName
+   ```
 
 3. **Install dependencies:**
-    ```bash
-    npm install
-    ```
+
+   ```bash
+   npm install
+   ```
 
 4. **Start the development server:**
-    ```bash
-    npm start
-    ```
+
+   ```bash
+   npm start
+   ```
 
 5. Open your browser and go to:
-    ```
-    http://localhost:3000
-    ```
+   ```
+   http://localhost:3000
+   ```
 
 ## <a name="note">📌 Notes</a>
 
-- This internship was an important milestone in my development journey, helping me build solid foundations in React and frontend technologies.  
-- All code was written by me as part of hands-on training.  
+- This internship was an important milestone in my development journey, helping me build solid foundations in React and frontend technologies.
+- All code was written by me as part of hands-on training.
 - I gained real-world insights into modern frontend workflows, responsive design, and component-based development.
 
 ---
 
-📷 **Certificate Preview:**  
-![ITI Certificate](./ITI.jpg)
+📷 **Certificate Preview:**
+![ITI Certificate](./iti.png)
